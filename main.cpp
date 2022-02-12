@@ -6,7 +6,13 @@ using namespace std;
 
 int main() {
 
-    uniform_real_distribution<float> distribution(-100.0,100.0);
+    ///Format
+    ///uniform_type-of-data-_distribution<type of data> distribution<minNum,maxNum>
+    ///unsigned seed = chrono::steady_clock::now().time_since_epoch().count();
+    ///std::default_random_engine generator(seed);
+    ///
+
+    uniform_int_distribution<int> distribution(-100,100);
     unsigned seed = chrono::steady_clock::now().time_since_epoch().count();
     std::default_random_engine generator(seed);
 
