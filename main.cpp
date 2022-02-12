@@ -12,6 +12,11 @@ int main() {
     ///std::default_random_engine generator(seed);
     ///
 
+
+    ///Type of data:
+    ///Integers - int : 2,87,-12
+    ///Real - real : 4.67,0.123,-6.8912
+
     uniform_int_distribution<int> distribution(-100,100);
     unsigned seed = chrono::steady_clock::now().time_since_epoch().count();
     std::default_random_engine generator(seed);
